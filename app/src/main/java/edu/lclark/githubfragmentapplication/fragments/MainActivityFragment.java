@@ -38,9 +38,15 @@ public class MainActivityFragment extends Fragment implements NetworkAsyncTask.G
     ArrayList<GithubUser> mFollowers;
     private FollowerSelectedListener mListener;
 
-    private String mUserLogin = "ntiller";
+    private String mUserLogin;
 
+    public String getmUserLogin() {
+        return mUserLogin;
+    }
 
+    public void setmUserLogin(String mUserLogin) {
+        this.mUserLogin = mUserLogin;
+    }
 
     public interface FollowerSelectedListener {
         void onFollowerSelected(GithubUser follower);
