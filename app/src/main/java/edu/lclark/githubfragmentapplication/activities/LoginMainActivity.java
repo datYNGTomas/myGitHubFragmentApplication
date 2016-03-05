@@ -33,7 +33,8 @@ public class LoginMainActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View v) {
 
-        if (v.getId() == R.id.fragment_main_login_button && !TextUtils.isEmpty((CharSequence) mUserName)) {
+        if (v.getId() == R.id.fragment_main_login_button && !TextUtils.isEmpty((CharSequence) mUserName)){
+           // MainActivityFragment.setmUserLogin(mUserName.getText().toString());
 
         }
 
